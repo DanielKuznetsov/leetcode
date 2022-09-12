@@ -16,9 +16,9 @@ const plusOne = function(digits) {
     for(let i = digits.length - 1; i >= 0; i--) {
         const currDigit = digits[i]
 
+        // if the last digits is less than 9, does not check any next digits
         if(currDigit < 9) {
             digits[i] += 1;
-            console.log(digits);
         }
 
         digits[i] = 0
